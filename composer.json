@@ -1,0 +1,23 @@
+{
+    "name": "vdlp/oc-phast-plugin",
+    "description": "Boost your OctoberCMS powered website load speed and rank better in search engines!",
+    "type": "october-plugin",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Kibo IT",
+            "email": "info@kiboit.com"
+        },
+        {
+            "name": "Van der Let & Partners",
+            "email": "octobercms@vdlp.nl"
+        },
+        {
+            "name": "Alwin Drenth",
+            "email": "adrenth@gmail.com"
+        }
+    ],
+    "require": {
+        "kiboit/phast": "^1.13"
+    }
+}

@@ -16,7 +16,7 @@ The only thing we did is wrap it into a OctoberCMS plugin. If you have any issue
 
 More information can be found at: https://www.phast.io/
 
-## Requirements
+## Configuration
 
 * For the **Phast** engine to work you need to white-list a php file. To do so add the following lines to the `.htaccess` sections:
 
@@ -39,3 +39,11 @@ More information can be found at: https://www.phast.io/
     ...
     ... 
 ```
+
+To configure this plugin execute the following command:
+
+`php artisan vendor:publish --provider="Vdlp\Phast\ServiceProviders\PhastServiceProvider" --tag="config"`
+
+This will create a `config/phast.php` file in your app where you can modify the configuration.
+
+Please check the default configuration in `vendor/kiboit/phast/src/Environment/config-default.php`.

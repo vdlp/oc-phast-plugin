@@ -9,6 +9,7 @@ namespace Vdlp\Phast;
 
 use App;
 use System\Classes\PluginBase;
+use Vdlp\Phast\ServiceProviders\PhastServiceProvider;
 
 /**
  * Class Plugin
@@ -49,5 +50,13 @@ final class Plugin extends PluginBase
                 require $projectLevel;
             }
         }
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function register(): void
+    {
+        $this->app->register(PhastServiceProvider::class);
     }
 }

@@ -1,2 +1,7 @@
-1.0.0:
-    - First version of Vdlp.Phast
+1.0.0: "First version of Vdlp.Phast"
+2.0.0:
+    - "Second version of Vdlp.Phast"
+    - "Update kiboit/phast library dependency to ^1.47"
+    - "Add vdlp:phast:clear-cache command"
+    - "Add Clear Cache Widget for use on Dashboard"
+    - "Fix loading of custom configuration"

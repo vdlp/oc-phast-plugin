@@ -1,7 +1,7 @@
 <?php
 
-/** @noinspection PhpIncludeInspection */
 /** @noinspection PhpMissingParentCallCommonInspection */
+/** @noinspection PhpIncludeInspection */
 
 declare(strict_types=1);
 
@@ -9,18 +9,11 @@ namespace Vdlp\Phast;
 
 use App;
 use System\Classes\PluginBase;
-use Vdlp\Phast\ServiceProviders\PhastServiceProvider;
+use Vdlp\Phast\Console;
+use Vdlp\Phast\ReportWidgets;
 
-/**
- * Class Plugin
- *
- * @package Vdlp\Phast
- */
 final class Plugin extends PluginBase
 {
-    /**
-     * {@inheritdoc}
-     */
     public function pluginDetails(): array
     {
         return [
@@ -32,10 +25,7 @@ final class Plugin extends PluginBase
         ];
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function boot()
+    public function boot(): void
     {
         if (!App::runningInConsole()
             && !App::runningUnitTests()
@@ -52,11 +42,33 @@ final class Plugin extends PluginBase
         }
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function register(): void
     {
-        $this->app->register(PhastServiceProvider::class);
+        $this->app->register(ServiceProvider::class);
+
+        $this->registerConsoleCommand(Console\ClearCache::class, Console\ClearCache::class);
+    }
+
+    public function registerPermissions(): array
+    {
+        return [
+            'vdlp.phast.clear_cache' => [
+                'label' => 'Allowed to clear Phast Cache.',
+                'tab' => 'Phast',
+            ],
+        ];
+    }
+
+    public function registerReportWidgets(): array
+    {
+        return [
+            ReportWidgets\ClearCache::class => [
+                'label' => 'Clear Phast Cache',
+                'context' => 'dashboard',
+                'permissions' => [
+                    'vdlp.phast.clear_cache'
+                ],
+            ],
+        ];
     }
 }

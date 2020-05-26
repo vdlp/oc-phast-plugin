@@ -18,6 +18,13 @@
         }
     ],
     "require": {
-        "kiboit/phast": "^1.13"
+        "php": "^7.1",
+        "kiboit/phast": "^1.47"
+    },
+    "archive": {
+        "exclude": [
+            ".gitignore",
+            ".idea/"
+        ]
     }
 }

@@ -1,0 +1,12 @@
+<div class="report-widget">
+    <h3>Phast Cache</h3>
+
+    <div id="<?= $this->getId() . '-cacheSize' ?>">
+        <?= $this->makePartial('cache', ['cacheSize' => $cacheSize]); ?>
+    </div>
+
+    <button class="btn btn-primary"
+            data-request="<?= $this->getEventHandler('onClearCache') ?>">
+        Clear Cache
+    </button>
+</div>

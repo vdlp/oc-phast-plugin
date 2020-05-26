@@ -4,9 +4,7 @@
 
 declare(strict_types=1);
 
-if (!defined('PHAST_CONFIG_FILE')) {
-    define('PHAST_CONFIG_FILE', __DIR__ . '/../../../config/phast.php');
-}
+require_once __DIR__ . '/common.php';
 
 $pluginLevel = __DIR__ . '/vendor/kiboit/phast/src/services.php';
 $projectLevel = __DIR__ . '/../../../vendor/kiboit/phast/src/services.php';

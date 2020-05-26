@@ -5,3 +5,4 @@
     - "Add vdlp:phast:clear-cache command"
     - "Add Clear Cache Widget for use on Dashboard"
     - "Fix loading of custom configuration"
+2.0.1: "Fix typo in README"

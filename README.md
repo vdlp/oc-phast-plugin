@@ -1,6 +1,6 @@
 <p align="center">
 	<img height="60px" width="60px" src="https://plugins.vdlp.nl/octobercms/icons/Vdlp.Phast.svg" >
-	<h1 align="center">Vdlp.Redirect</h1>
+	<h1 align="center">Vdlp.Phast</h1>
 </p>
 
 <p align="center">

@@ -1,6 +1,6 @@
 {
     "name": "vdlp/oc-phast-plugin",
-    "description": "Boost your OctoberCMS powered website load speed and rank better in search engines!",
+    "description": "Boost your October CMS powered website load speed and rank better in search engines!",
     "type": "october-plugin",
     "license": "GPL-2.0",
     "authors": [
@@ -19,7 +19,7 @@
     ],
     "require": {
         "php": "^7.1",
-        "kiboit/phast": "^1.47"
+        "kiboit/phast": "^1.70"
     },
     "archive": {
         "exclude": [

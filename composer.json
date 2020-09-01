@@ -2,7 +2,7 @@
     "name": "vdlp/oc-phast-plugin",
     "description": "Boost your October CMS powered website load speed and rank better in search engines!",
     "type": "october-plugin",
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-only",
     "authors": [
         {
             "name": "Kibo IT",

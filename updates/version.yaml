@@ -6,3 +6,5 @@
     - "Add Clear Cache Widget for use on Dashboard"
     - "Fix loading of custom configuration"
 2.0.1: "Fix typo in README"
+2.1.0: "Update kiboit/phast library dependency to ^1.70 -- See: https://github.com/kiboit/phast/blob/master/CHANGELOG.md"
+2.1.1: "Update plugin dependencies"
